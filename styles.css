@@ -127,7 +127,7 @@ button {
 }
 
 .info-sidebar-item:hover {
-    background-color: orange;
+    background-color: #eee;
 }
 
 .info-sidebar-item img {
@@ -305,6 +305,7 @@ footer {
 }
 
 @media only screen and (max-width: 992px) {
+    /* sec1 */
     .hero {
         flex-direction: column;
     }
@@ -326,25 +327,86 @@ footer {
     .hero button {
         margin-top: 24px;
     }
+
+    /* sec2 */
+
     .information {
         flex-direction: column;
+        padding: 0;
     }
     .info-main {
         display: none;
     }
     .info-sidebar {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .info-sidebar-item:first-child {
+        flex-direction: column;
+        padding: 16px;
     }
     .info-sidebar-item {
         flex-direction: column;
-        padding: 16px;
+        padding: 32px 16px;
     }
     .info-sidebar-item img {
         aspect-ratio: auto;
         width: 100%;
+        margin: 0;
     }
     .info-sidebar-item-detail {
         width: 100%;
+        padding: 16px;
+    }
+
+    /* sec3 */
+    .course {
+        background: white;
+    }
+    .course-item img,h4,p {
+        display: none;
+    }
+    .course-container {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .course-item {
+        width: 100%;
+        background: #eee;
+    }
+
+    .course-item div {
+        padding: 16px 16px 24px;
+    }
+
+    /* sec4 */
+
+    .thesis h2 {
+        padding: 32px 0 16px;
+    }
+
+    .thesis-main {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 24px;
+    }
+
+    .thesis-main h3,p {
+        display: none;
+    }
+
+    .thesis-sidebar {
+        display: none;
+    }
+    
+    /* footer */
+    .footer-container p {
+        display: block;
+    }
+
+    .footer-link {
+        display: none;
     }
 }
 
