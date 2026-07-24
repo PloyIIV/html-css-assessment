@@ -13,7 +13,6 @@ body {
     height: 32px;
     display: flex;
     align-items: center;
-    border: 1px solid red;
 }
 .logo h1 {
     font-weight: 600;
@@ -28,7 +27,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(255, 219, 153);
+    background-color: rgb(189, 188, 187);
     height: 64px;
     padding: 0 24px;
 }
@@ -58,7 +57,6 @@ nav a:hover {
 }
 
 .hero div {
-    border: 1px solid red;
     width: 28%;
 }
 
@@ -91,11 +89,12 @@ button {
 
 .information {
     display: flex;
+    padding: 32px 0;
 }
 
 .info-main {
     width: 60%;
-    margin: 32px 24px;
+    margin: 0 24px;
 }
 
 .info-main img {
@@ -112,7 +111,7 @@ button {
 }
 
 .info-main p:last-child {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 0.8em;
     font-weight: 500;
 }
@@ -213,6 +212,7 @@ button {
 
 .thesis h2 {
     text-align: center;
+    font-size: 2em;
     padding: 32px 0;
 }
 
@@ -278,4 +278,78 @@ footer {
 }
 .footer-link a {
     text-decoration: none;
+}
+
+/* media query */
+@media only screen and (max-width: 768px) {
+    nav a,li:nth-child(3),h1 {
+        display: none;
+    }
+    nav {
+        gap: 70px;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul {
+        gap: 70px;
+        padding: 0;
+        display: flex;
+    }
+
+    nav ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero img {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .hero div {
+        width: auto;
+        margin: 32px 16px;
+    }
+
+    .hero h2 {
+        margin-bottom: 32px;
+    }
+
+    .hero button {
+        margin-top: 24px;
+    }
+    .information {
+        flex-direction: column;
+    }
+    .info-main {
+        display: none;
+    }
+    .info-sidebar {
+        width: 100%;
+    }
+    .info-sidebar-item {
+        flex-direction: column;
+        padding: 16px;
+    }
+    .info-sidebar-item img {
+        aspect-ratio: auto;
+        width: 100%;
+    }
+    .info-sidebar-item-detail {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    nav ul img {
+        display: none;
+    }
 }
