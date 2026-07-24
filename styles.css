@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Prompt', 'Montserrat', sans-serif;
+}
+
+/* navbar css */
+.logo {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+}
+.logo h1 {
+    font-weight: 600;
+    color: gray;
+    font-size: 1.2rem;
+}
+.logo span {
+    font-weight: 300;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 219, 153);
+    height: 64px;
+    padding: 0 24px;
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* main css */
+
+.hero {
+    display: flex;
+    align-items: center;
+    color: #777;
+}
+
+.hero div {
+    border: 1px solid red;
+}
+
+.hero img {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.hero h2 {
+    font-size: 3.5em;
+}
+
+button {
+    width: 100%;
+}
