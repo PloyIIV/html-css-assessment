@@ -161,26 +161,28 @@ button {
 
 .course {
     background-color: #ddd;
-    border: 1px solid red;
+    padding: 32px 0;
 }
 
 .course h2 {
     text-align: center;
     font-size: 2.2em;
-    margin: 32px 0;
+    margin-bottom: 32px;
 }
 
 .course-container {
-    border: 1px solid greenyellow;
-    margin: 0 72px;
+    border: 2px solid rgb(47, 241, 255);
+    /* margin: 0 72px; */
+    padding: 0 72px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 32px;
 }
 
 .course-item {
     background-color: white;
-    width: fit-content;
+    width: min-content;
 }
 
 .course-item img {
@@ -202,6 +204,6 @@ button {
 }
 
 .course-item p {
-    width: 90%;
+    /* width: 90%; */
     font-size: 0.9em;
 }
