@@ -1,6 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    color: #555;
 }
 
 body {
@@ -47,7 +48,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* main css */
+/* sec1 css */
 
 .hero {
     display: flex;
@@ -84,4 +85,123 @@ button {
     background-color: gray;
     border: 0;
     color: white;
+}
+
+/* sec2 */
+
+.information {
+    display: flex;
+}
+
+.info-main {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.info-main img {
+    width: 100%;
+}
+
+.info-main h2 {
+    margin: 32px 0 24px;
+    font-size: 2.8em;
+}
+
+.info-main p {
+    font-weight: 300;
+}
+
+.info-main p:last-child {
+    margin-top: 20px;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.info-sidebar {
+    width: 40%;
+}
+
+.info-sidebar-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    border-left: 1px solid rgb(206, 206, 206);
+}
+
+.info-sidebar-item:hover {
+    background-color: orange;
+}
+
+.info-sidebar-item img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    height: auto;
+    width: 35%;
+    margin: 16px;
+}
+.info-sidebar-item-detail {
+    width: 65%;
+}
+
+.info-sidebar-item-detail h3 {
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+.info-sidebar-item-detail p {
+    margin: 8px 0;
+}
+
+.info-sidebar-item-detail a {
+    text-decoration: none;
+    color: rgb(79, 149, 253);
+}
+
+/* sec3 */
+
+.course {
+    background-color: #ddd;
+    border: 1px solid red;
+}
+
+.course h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin: 32px 0;
+}
+
+.course-container {
+    border: 1px solid greenyellow;
+    margin: 0 72px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.course-item {
+    background-color: white;
+    width: fit-content;
+}
+
+.course-item img {
+    height: auto;
+}
+
+.course-item div {
+    padding: 16px 0 16px 24px;
+}
+
+.course-item h3 {
+    font-weight: 600;
+    font-size: 1.6em;
+}
+
+.course-item h4 {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.course-item p {
+    width: 90%;
+    font-size: 0.9em;
 }
