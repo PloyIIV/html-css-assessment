@@ -56,9 +56,9 @@ nav a:hover {
     background-color: #dadada;
 }
 
-.hero div {
+/* .hero div {
     width: 28%;
-}
+} */
 
 .hero img {
     width: 60%;
@@ -66,9 +66,12 @@ nav a:hover {
 }
 
 .hero h2 {
-    font-size: 3.2em;
+    font-size: 3.3em;
     line-height: 1em;
-    margin-bottom: 30px;
+}
+
+.hero h2:last-of-type {
+    margin-bottom: 32px;
 }
 
 .hero p {
@@ -282,7 +285,7 @@ footer {
 
 /* media query */
 @media only screen and (max-width: 768px) {
-    nav a,li:nth-child(3),h1 {
+    nav a,nav li:nth-child(3),nav h1 {
         display: none;
     }
     nav {
@@ -320,8 +323,12 @@ footer {
         margin: 32px 16px;
     }
 
-    .hero h2 {
+    .hero h2:last-of-type {
         margin-bottom: 32px;
+    }
+
+    .hero p {
+        display: block;
     }
 
     .hero button {
@@ -364,7 +371,11 @@ footer {
     .course {
         background: white;
     }
-    .course-item img,h4,p {
+
+    .course h2 {
+        margin-bottom: 16px;
+    }
+    .course-item img, .course-item h4, .course-item p {
         display: none;
     }
     .course-container {
@@ -392,7 +403,7 @@ footer {
         margin-bottom: 24px;
     }
 
-    .thesis-main h3,p {
+    .thesis-main h3,.thesis-container p {
         display: none;
     }
 
